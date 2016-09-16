@@ -15,6 +15,7 @@
 
 #include "ConversionContext.h"
 
+#include "refract/RenderFormURLEncodedVisitor.h"
 #include "refract/RenderJSONVisitor.h"
 #include "refract/JSONSchemaVisitor.h"
 
@@ -29,6 +30,9 @@ namespace drafter {
         }
         else if (RegexMatch(contentType, JSONRegex)) {
             return JSONRenderFormat;
+        }
+        else if (contentType == "application/x-www-form-urlencoded") {
+            return FormURLEncodedFormat;
         }
 
         return UndefinedRenderFormat;
@@ -103,6 +107,16 @@ namespace drafter {
                 delete expanded;
 
                 return std::make_pair(result, NodeInfo<Asset>::NullSourceMap());
+            }
+
+            case FormURLEncodedFormat:
+            {
+                refract::RenderFormURLEncodedVisitor renderer;
+                refract::Visit(renderer, *expanded);
+
+                delete expanded;
+
+                return std::make_pair(renderer.getString(), NodeInfo<Asset>::NullSourceMap());
             }
 
             case UndefinedRenderFormat:

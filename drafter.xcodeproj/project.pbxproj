@@ -59,6 +59,9 @@
 		19FD76A71B97216100B160CF /* libsos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A129EF1B70B88E00366AA7 /* libsos.a */; };
 		19FD76A81B97216700B160CF /* libmarkdownparser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A129E91B70AFA900366AA7 /* libmarkdownparser.a */; };
 		19FD76A91B97216700B160CF /* libsnowcrash.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A129E71B70AFA600366AA7 /* libsnowcrash.a */; };
+		274306E71D8BEB5000BC6FD8 /* RenderFormURLEncodedVisitor.cc in Sources */ = {isa = PBXBuildFile; fileRef = 274306E51D8BEB5000BC6FD8 /* RenderFormURLEncodedVisitor.cc */; };
+		274306E81D8BEB5000BC6FD8 /* RenderFormURLEncodedVisitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 274306E61D8BEB5000BC6FD8 /* RenderFormURLEncodedVisitor.h */; };
+		274306EA1D8C082C00BC6FD8 /* test-RenderFormURLEncodedTest.cc in Sources */ = {isa = PBXBuildFile; fileRef = 274306E91D8C082C00BC6FD8 /* test-RenderFormURLEncodedTest.cc */; };
 		2769EFF31D1C438D00907A4B /* ExpandVisitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 2769EFF11D1C438D00907A4B /* ExpandVisitor.h */; };
 		2769EFF41D1C438D00907A4B /* FilterVisitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 2769EFF21D1C438D00907A4B /* FilterVisitor.h */; };
 		2769EFF61D1C43B700907A4B /* Query.cc in Sources */ = {isa = PBXBuildFile; fileRef = 2769EFF51D1C43B700907A4B /* Query.cc */; };
@@ -185,6 +188,9 @@
 		19A129FD1B70B8D000366AA7 /* sosYAML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sosYAML.h; path = ext/sos/src/sosYAML.h; sourceTree = SOURCE_ROOT; };
 		19BD7B971B70AAAF00A11E83 /* liblibdrafter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibdrafter.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		19FD769D1B9720CB00B160CF /* drafter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = drafter; sourceTree = BUILT_PRODUCTS_DIR; };
+		274306E51D8BEB5000BC6FD8 /* RenderFormURLEncodedVisitor.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderFormURLEncodedVisitor.cc; path = src/refract/RenderFormURLEncodedVisitor.cc; sourceTree = SOURCE_ROOT; };
+		274306E61D8BEB5000BC6FD8 /* RenderFormURLEncodedVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RenderFormURLEncodedVisitor.h; path = src/refract/RenderFormURLEncodedVisitor.h; sourceTree = SOURCE_ROOT; };
+		274306E91D8C082C00BC6FD8 /* test-RenderFormURLEncodedTest.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "test-RenderFormURLEncodedTest.cc"; path = "test/test-RenderFormURLEncodedTest.cc"; sourceTree = "<group>"; };
 		2769EFF11D1C438D00907A4B /* ExpandVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExpandVisitor.h; path = src/refract/ExpandVisitor.h; sourceTree = SOURCE_ROOT; };
 		2769EFF21D1C438D00907A4B /* FilterVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FilterVisitor.h; path = src/refract/FilterVisitor.h; sourceTree = SOURCE_ROOT; };
 		2769EFF51D1C43B700907A4B /* Query.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Query.cc; path = src/refract/Query.cc; sourceTree = SOURCE_ROOT; };
@@ -294,6 +300,7 @@
 				40AEEC3C1BB60CB6005866DD /* test-RefractParseResultTest.cc */,
 				40DDBDD91BE14EE700B10819 /* test-RefractSourceMapTest.cc */,
 				19A129CC1B70ADC300366AA7 /* test-RenderTest.cc */,
+				274306E91D8C082C00BC6FD8 /* test-RenderFormURLEncodedTest.cc */,
 				400FFA0B1C1B0E12006A4CE0 /* test-SchemaTest.cc */,
 				403893651CC0021700D01E17 /* test-SerializeResultTest.cc */,
 				403893631CC0007F00D01E17 /* test-SerializeSourceMapTest.cc */,
@@ -328,6 +335,8 @@
 				400F53FA1C5989F1004EA235 /* Query.h */,
 				19A129A11B70AC9A00366AA7 /* Registry.cc */,
 				19A129A21B70AC9A00366AA7 /* Registry.h */,
+				274306E51D8BEB5000BC6FD8 /* RenderFormURLEncodedVisitor.cc */,
+				274306E61D8BEB5000BC6FD8 /* RenderFormURLEncodedVisitor.h */,
 				19A129A31B70AC9A00366AA7 /* RenderJSONVisitor.cc */,
 				19A129A41B70AC9A00366AA7 /* RenderJSONVisitor.h */,
 				19A129A51B70AC9A00366AA7 /* SerializeCompactVisitor.cc */,
@@ -459,6 +468,7 @@
 				40EF03D61B7210F300865990 /* RefractDataStructure.h in Headers */,
 				19A129C31B70AC9A00366AA7 /* TypeQueryVisitor.h in Headers */,
 				2769EFF31D1C438D00907A4B /* ExpandVisitor.h in Headers */,
+				274306E81D8BEB5000BC6FD8 /* RenderFormURLEncodedVisitor.h in Headers */,
 				19A129C51B70AC9A00366AA7 /* Visitor.h in Headers */,
 				19A129871B70ABE100366AA7 /* Render.h in Headers */,
 				19A129B31B70AC9A00366AA7 /* Element.h in Headers */,
@@ -595,6 +605,7 @@
 			files = (
 				408560761CBB983100932414 /* test-ExtendElementTest.cc in Sources */,
 				40EF03DE1B72135E00865990 /* test-RefractDataStructureTest.cc in Sources */,
+				274306EA1D8C082C00BC6FD8 /* test-RenderFormURLEncodedTest.cc in Sources */,
 				4093675F1CBB90DE0065A78A /* test-ElementFactoryTest.cc in Sources */,
 				19A129E01B70AE3200366AA7 /* test-drafter.cc in Sources */,
 				400F54051C598A35004EA235 /* test-CircularReferenceTest.cc in Sources */,
@@ -643,6 +654,7 @@
 				400FFA081C1B0DBB006A4CE0 /* JSONSchemaVisitor.cc in Sources */,
 				401074A31B833A1000B66442 /* Render.cc in Sources */,
 				19A1298E1B70ABE100366AA7 /* SerializeResult.cc in Sources */,
+				274306E71D8BEB5000BC6FD8 /* RenderFormURLEncodedVisitor.cc in Sources */,
 				400F53C61C5989C7004EA235 /* NamedTypesRegistry.cc in Sources */,
 				400FFA0A1C1B0DBB006A4CE0 /* VisitorUtils.cc in Sources */,
 				2769EFF61D1C43B700907A4B /* Query.cc in Sources */,

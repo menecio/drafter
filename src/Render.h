@@ -19,8 +19,9 @@ namespace drafter {
 
     enum RenderFormat {
         UndefinedRenderFormat = 0,   // Undefined format
-        JSONRenderFormat = 1,        // JSON format
-        JSONSchemaRenderFormat = 2   // JSON Schema format
+        FormURLEncodedFormat = 1,    // Form URL Encoded
+        JSONRenderFormat = 2,        // JSON format
+        JSONSchemaRenderFormat = 3   // JSON Schema format
     };
 
     class ConversionContext;

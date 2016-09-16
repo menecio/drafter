@@ -2,10 +2,15 @@
 
 ## Master
 
-* Warn user on "action" with non-absolute path
-  [#350](https://github.com/apiaryio/drafter/issues/350)
+### Enhancements
+
+* `application/x-www-form-urlencoded` is now supported as an MSON serialisation
+  type for requests and responses.
 
 ### Bug Fixes
+
+* Warn user on "action" with non-absolute path
+  [#350](https://github.com/apiaryio/drafter/issues/350)
 
 * Prevent crashing and improve structure of result from parsing regarding
   markdown lists.
