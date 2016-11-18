@@ -45,7 +45,7 @@
                           }
                         ],
                         "body": "{\n  \"enumField\": \"c\"\n}",
-                        "schema": "{\n  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"enumField\": {\n      \"type\": \"string\",\n      \"enum\": [\n        \"a\",\n        \"b\",\n        \"c\"\n      ],\n      \"default\": \"c\"\n    }\n  }\n}",
+                        "schema": "{\n  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"enumField\": {\n      \"type\": \"string\",\n      \"enum\": [\n        \"a\",\n        \"b\",\n        \"c\"\n      ],\n      \"default\": [\n        {\n          \"element\": \"string\",\n          \"content\": \"c\"\n        }\n      ]\n    }\n  }\n}",
                         "content": [
                           {
                             "element": "dataStructure",
@@ -141,7 +141,7 @@
                           }
                         ],
                         "body": "{\n  \"enumField\": \"c\"\n}",
-                        "schema": "{\n  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"enumField\": {\n      \"type\": \"string\",\n      \"enum\": [\n        \"a\",\n        \"b\",\n        \"c\"\n      ],\n      \"default\": \"c\"\n    }\n  }\n}",
+                        "schema": "{\n  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"enumField\": {\n      \"type\": \"string\",\n      \"enum\": [\n        \"a\",\n        \"b\",\n        \"c\"\n      ],\n      \"default\": [\n        {\n          \"element\": \"string\",\n          \"content\": \"c\"\n        }\n      ]\n    }\n  }\n}",
                         "content": [
                           {
                             "element": "dataStructure",

@@ -45,7 +45,7 @@
                           }
                         ],
                         "body": "{\n  \"type\": \"\"\n}",
-                        "schema": "{\n  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"type\": {\n      \"type\": \"string\",\n      \"enum\": [\n        \"regular\"\n      ]\n    }\n  }\n}",
+                        "schema": "{\n  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"type\": {\n      \"type\": \"string\",\n      \"enum\": [\n        \"regular\"\n      ],\n      \"default\": []\n    }\n  }\n}",
                         "content": [
                           {
                             "element": "dataStructure",
@@ -139,7 +139,7 @@
                           }
                         ],
                         "body": "{\n  \"type\": \"\"\n}",
-                        "schema": "{\n  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"type\": {\n      \"type\": \"string\",\n      \"enum\": [\n        \"regular\"\n      ]\n    }\n  }\n}",
+                        "schema": "{\n  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"type\": {\n      \"type\": \"string\",\n      \"enum\": [\n        \"regular\"\n      ],\n      \"default\": []\n    }\n  }\n}",
                         "content": [
                           {
                             "element": "dataStructure",

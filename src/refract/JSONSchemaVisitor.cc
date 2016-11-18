@@ -211,6 +211,15 @@ namespace refract
             if (IsTypeAttribute(e, "nullable")) {
                 renderer.addSchemaType("null");
             }
+
+            if (e.value.second) {
+                IElement::MemberElementCollection::const_iterator defaultIt = e.value.second->attributes.find("default");
+
+                if (defaultIt != e.value.second->attributes.end()) {
+                    renderer.addMember("default", (*defaultIt)->clone());
+                }
+            }
+
             addMember(str->value, renderer.getOwnership());
         }
         else {
